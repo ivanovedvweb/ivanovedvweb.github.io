@@ -1,0 +1,141 @@
+
+html *:hover {
+    -webkit-transition: background 0.25s, color 0.25s;
+    -moz-transition: background 0.25s, color 0.25s;
+    -ms-transition: background 0.25s, color 0.25s;
+    -o-transition: background 0.25s, color 0.25s;
+    transition: background 0.25s, color 0.25s;
+}
+body {
+  /*background: linear-gradient(to top, #fefcea, #f1da36);*/
+  background: linear-gradient(to right, #6178a2, #a1bbd2 72%);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+#bs-example-navbar-collapse-1 {
+  padding: 10px 0;
+}
+.navbar-brand {
+  padding: 0 15px 0 0;
+}
+.navbar-nav {
+  padding: 15px 0 15px;
+}
+.nav-rightBlock {
+  float: right;
+  max-width:15%;
+}
+.wrapper-header-title {
+  height: 320px;
+  /*background: url("../images/hvac-services_02.png") no-repeat;*/
+  background: url("../images/image12.jpg") no-repeat;
+  background-size: cover;
+}
+.wrapperSub-header-title {
+  height: 320px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header-title {
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.header-title h1 {
+  margin-bottom: 5px;
+  font-size: 36px;
+  text-shadow: 2px 2px 0px #fff;
+}
+.header-title p {
+  font-size: 24px;
+  line-height: 33px;
+  text-shadow: 2px 2px 0px #fff;
+}
+.main-content .content {
+  margin-bottom: 40px;
+}
+.main-content .content h3 {
+  text-align: center;
+}
+.main-content img {
+  display: block;
+  float: left;
+  margin-right: 40px;
+}
+.main-content p, ol {
+  /*float: right;*/
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.main-content .content h4 {
+  color: #0933d0;
+}
+.map {
+  float: right;
+}
+#contakts {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.footer {
+  max-width: 1140px;
+  max-height: 70px;
+  padding: 15px;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+#toTop {
+width:80px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:50px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+}
+.content {
+  /*border: 1px solid #E7E7E7;*/
+  border-radius: 5px;
+  border: 1px solid green;
+
+}
+.contacts {
+  padding: 10px;
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+}
+.dropdown-menu .heating {
+  color: red;
+}
+.dropdown-menu .heating:hover {
+  font-weight: bold;
+  color: red;
+}
+.dropdown-menu .water {
+  color: blue;
+}
+.dropdown-menu .water:hover {
+  font-weight: bold;
+  color: blue;
+}
+.dropdown-menu .sewerage {
+  color: green;
+}
+.dropdown-menu .sewerage:hover {
+  font-weight: bold;
+  color: green;
+}
