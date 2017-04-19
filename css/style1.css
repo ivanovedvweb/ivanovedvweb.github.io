@@ -78,7 +78,13 @@ body {
   color: #0933d0;
 }
 .map {
-  float: right;
+  overflow: hidden;
+  max-width: 1140px;
+  margin: 0;
+}
+.mapin {
+  position: relative;
+  padding: 0;
 }
 #contakts {
   text-align: center;
@@ -148,5 +154,6 @@ font-size:11px;
   }
   .mini-map {
     display: block;
+    margin: 0 auto;
   }
 }
