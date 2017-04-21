@@ -28,6 +28,7 @@ body {
 }
 .nav-rightBlock {
   float: right;
+  margin-top: 15px;
 }
 .wrapper-header-title {
   height: 320px;
@@ -154,5 +155,11 @@ font-size:11px;
   .mini-map {
     display: block;
     margin: 0 auto;
+  }
+  .content  img {
+    margin-bottom: 20px;
+  }
+  .content h4 {
+    text-align: center;
   }
 }
