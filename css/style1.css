@@ -20,11 +20,33 @@ body {
 #bs-example-navbar-collapse-1 {
   padding: 10px 0;
 }
+.main-header .navbar-default {
+  background-color: #041E62;
+  color: #fff;
+}
+/*.navbar-default .navbar-nav > .active > a,*/
+ /*.navbar-default .navbar-nav > .active > a:focus,*/
+  .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #08050C;
+    color: #fff;
+  }
 .navbar-brand {
   padding: 0 15px 0 0;
 }
 .navbar-nav {
   padding: 15px 0 15px;
+}
+/*.navbar-default .navbar-nav > li:hover {
+  background-color: #2C2CC6;
+
+  border-radius: 5px;
+}*/
+.navbar-default .navbar-nav > li > a{
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 .nav-rightBlock {
   float: right;
@@ -33,7 +55,7 @@ body {
 .wrapper-header-title {
   height: 320px;
   /*background: url("../images/hvac-services_02.png") no-repeat;*/
-  background: url("../images/image12.jpg") no-repeat;
+  background: url("../images/ogon-protiv-vody.jpg") no-repeat;
   background-size: cover;
 }
 .wrapperSub-header-title {
@@ -98,30 +120,55 @@ body {
   text-align: center;
   color: #fff;
 }
-#toTop {
+/*#toTop {
 width:80px;
 border:1px solid #ccc;
 background:#f7f7f7;
 text-align:center;
 padding:5px;
 position:fixed;
-bottom:50px; /* отступ кнопки от нижнего края страницы*/
+bottom:50px;
 right:10px;
 cursor:pointer;
 display:none;
 color:#333;
 font-family:verdana;
 font-size:11px;
+}*/
+#toTop {
+  background-color: #23c6ec;
+    border-radius: 40px;
+    bottom: 30px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0, 1) 0s;
+    width: 45px;
+    cursor: pointer;
+    z-index: 100;
 }
+#toTop:hover {
+  height: 60px;
+  background-color: #F98A04;
+}
+
 .content {
   /*border: 1px solid #E7E7E7;*/
   border-radius: 5px;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
+  box-shadow: 2px 2px 15px #041E62;
 
 }
 .contacts {
   padding: 10px;
-  border: 1px solid #E7E7E7;
+  box-shadow: 2px 2px 15px #041E62;
   border-radius: 5px;
 }
 .dropdown-menu .heating {
