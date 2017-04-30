@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ООО "ТИС"</title>
+
 </head>
 <body>
   <div class="wrapper">
@@ -30,20 +31,14 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">О нас <span class="sr-only">(current)</span></a></li>
-
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Наши услуги <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a class="scrollto heating" href="#heating">Отопление</a></li>
-              <li><a class="scrollto water" href="#water">Водоснабжение</a></li>
-              <li><a class="scrollto sewerage" href="#sewerage">Канализация</a></li>
-            </ul>
-          </li>
-            <li><a class="scrollto" href="#contakts">Контакты</a></li>
+          <li><a href="#">О нас <span class="sr-only">(current)</span></a></li>
+              <li><a class="toAnchor heating" href="#heating">Отопление</a></li>
+              <li><a class="toAnchor water" href="#water">Водоснабжение</a></li>
+              <li><a class="toAnchor sewerage" href="#sewerage">Канализация</a></li>
+            <li><a class="toAnchor" href="#contakts">Контакты</a></li>
         </ul>
         <div class="nav-rightBlock">
-          <p> 
+          <p>
           8-917-241-64-60<br/>
           г. Елабуга
           </p>
@@ -52,16 +47,21 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="wrapper-header-title">
-    <div class="wrapperSub-header-title">
-      <div class="header-title">
-        <h1>ООО “ТИС”  </h1>
-        <p>Монтаж систем отопления,<br/>
-          водоснабжения, канализации
-        </p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="wrapper-header-title">
+        <div class="wrapperSub-header-title">
+              <div class="header-title">
+                    <h1>ООО “ТИС”  </h1>
+                    <p>Монтаж систем отопления,<br/>
+                      водоснабжения, канализации
+                    </p>
+              </div>
+          </div>
       </div>
-      </div>
+    </div>
   </div>
+
         </header>
   <main class="main-content clearfix">
     <div class="content clearfix">
@@ -147,8 +147,8 @@
             <p>Мы находимся по адресу:
                 423600, РТ, г. Елабуга,пр-т Нефтяников 113.
             </p>
-            <p>тел.: 8(85557)7-77-77<br/>
-                    моб.: 8-917-777-77-77
+            <p>
+                    моб.: 8-917-241-64-60
             </p>
       </div>
       <div class="map row">
@@ -171,15 +171,20 @@
  <!-- Include all compiled plugins (below), or include individual files as needed -->
  <script src="js/bootstrap.min.js"></script>
  <script>
+
  //scroll toAncor
-jQuery(document).ready(function() {
-  jQuery("a.scrollto").click(function () {
-    elementClick = jQuery(this).attr("href")
-    destination = jQuery(elementClick).offset().top;
-    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
-    return false;
-  });
-});
+
+$('.toAnchor').on('click', function () {
+        $('.navbar-collapse').removeClass('in');
+        $a = $($(this).attr('href'));
+        $('html,body').animate({ scrollTop: $a.offset().top - 50}, 500);
+      return false;
+      });
+
+// $(document).on('click',function(){
+// $('.collapse').collapse('hide');
+// })
+
 //scroll toTop
 $(function() {
 $(window).scroll(function() {
@@ -194,6 +199,6 @@ $('body,html').animate({scrollTop:0},800);
 });
 });
 </script>
-<div id = "toTop" > ^ Наверх </div >
+<div id = "toTop" ><span class="glyphicon glyphicon-arrow-up"></span></div >
 </body>
 </html>
