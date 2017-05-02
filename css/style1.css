@@ -55,7 +55,7 @@ body {
 .wrapper-header-title {
   height: 320px;
   /*background: url("../images/hvac-services_02.png") no-repeat;*/
-  background: url("../images/ogon-protiv-vody.jpg") no-repeat;
+  background: url("../images/bg1.jpg") no-repeat;
   background-size: cover;
 }
 .wrapperSub-header-title {
@@ -100,41 +100,30 @@ body {
   color: #0933d0;
 }
 .map {
-  overflow: hidden;
-  max-width: 1140px;
-  margin: 0;
-}
-.mapin {
-  position: relative;
   padding: 0;
 }
+/*.map::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 10px 30px -10px #000,
+              inset 0 -10px 20px -10px #000;
+  z-index: 1;
+  pointer-events: none;
+}*/
 #contakts {
   text-align: center;
   margin-bottom: 40px;
 }
 .footer {
-  max-width: 1140px;
+  max-width: 100%;
   max-height: 70px;
   padding: 15px;
   background: #333;
   text-align: center;
   color: #fff;
 }
-/*#toTop {
-width:80px;
-border:1px solid #ccc;
-background:#f7f7f7;
-text-align:center;
-padding:5px;
-position:fixed;
-bottom:50px;
-right:10px;
-cursor:pointer;
-display:none;
-color:#333;
-font-family:verdana;
-font-size:11px;
-}*/
 #toTop {
   background-color: #23c6ec;
     border-radius: 40px;
@@ -160,9 +149,7 @@ font-size:11px;
 }
 
 .content {
-  /*border: 1px solid #E7E7E7;*/
   border-radius: 5px;
-  /*border: 1px solid green;*/
   box-shadow: 2px 2px 15px #041E62;
 
 }
@@ -196,13 +183,6 @@ font-size:11px;
   display: none;
 }
 @media (max-width: 400px) {
-  .map {
-    display: none;
-  }
-  .mini-map {
-    display: block;
-    margin: 0 auto;
-  }
   .content  img {
     margin-bottom: 20px;
   }
