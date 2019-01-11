@@ -175,3 +175,8 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  .wrapper-header-title {
+  height: 320px;
+  background: url("../images/bg1.jpg") no-repeat;
+}  
