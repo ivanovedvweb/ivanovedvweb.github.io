@@ -125,11 +125,7 @@ body {
     cursor: pointer;
     z-index: 100;
 }
-#toTop::before {
-  content: "^";
-  font-size: 30px;
 
-}
 #toTop:hover {
   height: 60px;
   background-color: #F98A04;
